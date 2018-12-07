@@ -1,0 +1,152 @@
+bin/gem
+├─ rubygems/gem_runner
+│  ├─ rubygems/command_manager
+│  │  ├─ rubygems/user_interaction
+│  │  ├─ rubygems/command
+│  │  ├─ timeout*
+│  │  └─ rubygems/commands/#{command_name}_command
+│  ├─ rubygems/config_file
+│  └─ rubygems/deprecate
+├─ rubygems/exceptions
+└─ rubygems
+   ├─ rubygems/dependency_installer
+   │  ├─ rubygems
+   │  ├─ rubygems/dependency_list
+   │  ├─ rubygems/package
+   │  ├─ rubygems/installer
+   │  ├─ rubygems/spec_fetcher
+   │  ├─ rubygems/user_interaction
+   │  ├─ rubygems/source
+   │  ├─ rubygems/available_set
+   │  └─ rubygems/deprecate
+   ├─ rubygems/user_interaction
+   │  ├─ rubygems/util
+   │  ├─ rubygems/deprecate
+   │  └─ io/console
+   ├─ rubygems/bundler_version_finder
+   │  └─ rubygems/util
+   ├─ rubygems/config_file
+   │  ├─ rubygems/user_interaction
+   │  ├─ rbconfig*
+   │  └─ etc*
+   ├─ rubygems/dependency
+   │  ├─ rubygems/bundler_version_finder
+   │  └─ rubygems/requirement
+   ├─ rubygems/dependency_list
+   │  ├─ tsort*
+   │  └─ rubygems/deprecate
+   ├─ rubygems/installer
+   │  ├─ rubygems/command
+   │  ├─ rubygems/exceptions
+   │  ├─ rubygems/deprecate
+   │  ├─ rubygems/package
+   │  ├─ rubygems/ext
+   │  ├─ rubygems/user_interaction
+   │  ├─ fileutils*
+   │  ├─ pathname*
+   │  └─ rubygems
+   ├─ rubygems/util/licenses
+   │  └─ rubygems/text
+   ├─ rubygems/path_support
+   ├─ rubygems/platform
+   │  └─ rubygems/deprecate
+   ├─ rubygems/request_set
+   │  ├─ tsort*
+   │  ├─ rubygems/dependency_installer
+   │  ├─ rubygems/request_set/gem_dependency_api
+   │  ├─ rubygems/request_set/lockfile
+   │  └─ rubygems/request_set/lockfile/tokenizer
+   │     └─ rubygems/request_set/lockfile/parser
+   ├─ rubygems/requirement
+   │  ├─ rubygems/version
+   │  └─ rubygems/deprecate
+   ├─ rubygems/resolver
+   │  ├─ rubygems/dependency
+   │  ├─ rubygems/exceptions
+   │  ├─ rubygems/util
+   │  ├─ rubygems/util/list
+   │  ├─ rubygems/resolver/molinillo
+   │  ├─ rubygems/resolver/activation_request
+   │  ├─ rubygems/resolver/conflict
+   │  ├─ rubygems/resolver/dependency_request
+   │  ├─ rubygems/resolver/requirement_list
+   │  ├─ rubygems/resolver/stats
+   │  ├─ rubygems/resolver/set
+   │  ├─ rubygems/resolver/api_set
+   │  ├─ rubygems/resolver/composed_set
+   │  ├─ rubygems/resolver/best_set
+   │  ├─ rubygems/resolver/current_set
+   │  ├─ rubygems/resolver/git_set
+   │  ├─ rubygems/resolver/index_set
+   │  ├─ rubygems/resolver/installer_set
+   │  ├─ rubygems/resolver/lock_set
+   │  ├─ rubygems/resolver/vendor_set
+   │  ├─ rubygems/resolver/source_set
+   │  ├─ rubygems/resolver/specification
+   │  ├─ rubygems/resolver/spec_specification
+   │  ├─ rubygems/resolver/api_specification
+   │  ├─ rubygems/resolver/git_specification
+   │  ├─ rubygems/resolver/index_specification
+   │  ├─ rubygems/resolver/installed_specification
+   │  ├─ rubygems/resolver/local_specification
+   │  ├─ rubygems/resolver/lock_specification
+   │  └─ rubygems/resolver/vendor_specification
+   ├─ rubygems/source
+   │  ├─ fileutils
+   │  ├─ uri
+   │  ├─ rubygems/source/git
+   │  ├─ rubygems/source/installed
+   │  ├─ rubygems/source/specific_file
+   │  ├─ rubygems/source/local
+   │  ├─ rubygems/source/lock
+   │  └─ rubygems/source/vendor
+   ├─ rubygems/source_list
+   │  └─ rubygems/source
+   ├─ rubygems/spec_fetcher
+   │  ├─ rubygems/remote_fetcher
+   │  ├─ rubygems/user_interaction
+   │  ├─ rubygems/errors
+   │  ├─ rubygems/text
+   │  └─ rubygems/name_tuple
+   ├─ rubygems/specification
+   │  ├─ rubygems/version
+   │  ├─ rubygems/requirement
+   │  ├─ rubygems/platform
+   │  ├─ rubygems/deprecate
+   │  ├─ rubygems/basic_specification
+   │  ├─ rubygems/stub_specification
+   │  ├─ rubygems/specification_policy
+   │  ├─ rubygems/util/list
+   │  ├─ stringio*
+   │  ├─ rubygems/config_file
+   │  ├─ rubygems/ext
+   │  ├─ rubygems/user_interaction
+   │  └─ rubygems/psych_tree
+   ├─ rubygems/util
+   │  ├─ zlib*
+   │  └─ stringio*
+   ├─ rubygems/version
+   │  └─ rubygems/requirement
+   ├─ rubygems/specification
+   │  ├─ rubygems/version
+   │  ├─ rubygems/requirement
+   │  ├─ rubygems/platform
+   │  ├─ rubygems/deprecate
+   │  ├─ rubygems/basic_specification
+   │  ├─ rubygems/stub_specification
+   │  ├─ rubygems/specification_policy
+   │  ├─ rubygems/util/list
+   │  ├─ stringio*
+   │  ├─ rubygems/config_file
+   │  ├─ rubygems/ext
+   │  ├─ rubygems/user_interaction
+   │  ├─ rubygems/psych_tree
+   │  └─ rubygems/user_interaction
+   ├─ rubygems/exceptions
+   │  └─ rubygems/deprecate
+   ├─ rubygems/defaults/operating_system (if it exists -- what is this from?)
+   ├─ rubygems/defaults/#{RUBY_ENGINE}   (if it exists -- what is this from?)
+   ├─ rubygems/core_ext/kernel_gem
+   ├─ rubygems/core_ext/kernel_require
+   │  └─ monitor*
+   └─ rubygems/core_ext/kernel_warn
