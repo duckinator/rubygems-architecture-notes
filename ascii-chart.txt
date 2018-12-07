@@ -1,3 +1,5 @@
+* = from the Ruby standard library.
+
 bin/gem
 ├─ rubygems/gem_runner
 │  ├─ rubygems/command_manager
